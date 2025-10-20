@@ -9,12 +9,12 @@
 </head>
 <body>
     <div class="card">
-        <img src="assets/socmed.jpg" alt="">
+        <img src="assets/socmed.jpg" alt="Social Media" id="more">
         <div class="content border" style="border-top: none;">
             <span class="card-title">Urban Dreams</span>
             <div class="card-footer">
                 <div class="user">
-                    <img src="assets/pp.jpg" alt="">
+                    <img src="assets/pp.jpg" alt="Kang Lloyd Profile Picture" id="lloyd">
                     <span>Kang Lloyd</span>
                 </div>
                 <div class="stat">
@@ -30,14 +30,25 @@
     </div>
     <script>
         let center = false;
-        document.getElementById('more').onclick = () => {
+        let lloydify = false;
+        let body = document.body;
+        let imgHeader = document.getElementById('more');
+        imgHeader.onclick = () => {
             center = !center;
             if(center) {
-                document.body.style.display = 'flex';
-                document.body.style.justifyContent = 'center';
-                document.body.style.alignItems = 'center';
+                body.style.display = 'flex';
+                body.style.justifyContent = 'center';
+                body.style.alignItems = 'center';
             } else {
-                document.body.style.display = 'block';
+                body.style.display = 'block';
+            }
+        };
+        document.getElementById('lloyd').onclick = () => {
+            lloydify = !lloydify;
+            if(lloydify) {
+                imgHeader.src = 'assets/pp.jpg';
+            } else {
+                imgHeader.src = 'assets/socmed.jpg';
             }
         };
     </script>
