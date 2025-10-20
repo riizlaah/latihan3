@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
-    <title>Document</title>
+    <title>Latihan 3</title>
     <style>
+        body {
+            height: 96.5vh;
+        }
         .card {
             width: 360px;
             border: 2px solid whitesmoke;
@@ -21,6 +24,9 @@
         .card .icons i {
             font-size: 24px;
         }
+        #more {
+            cursor: pointer;
+        }
         .card-title {
             font-size: 1.2em;
             font-weight: bold;
@@ -35,9 +41,22 @@
 </head>
 <body>
     <div class="card">
-        <div class="icons"><i class="hgi hgi-stroke hgi-user-account" style="color: dodgerblue;"></i><i class="hgi hgi-stroke hgi-more-vertical"></i></div>
+        <div class="icons"><i class="hgi hgi-stroke hgi-user-account" style="color: dodgerblue;"></i><i class="hgi hgi-stroke hgi-more-vertical" id="more"></i></div>
         <span class="card-title">Personal Info</span>
         <p>We're open to partnerships, guest posts, promo banners, and more.</p>
     </div>
+    <script>
+        let center = false;
+        document.getElementById('more').onclick = () => {
+            center = !center;
+            if(center) {
+                document.body.style.display = 'flex';
+                document.body.style.justifyContent = 'center';
+                document.body.style.alignItems = 'center';
+            } else {
+                document.body.style.display = 'block';
+            }
+        };
+    </script>
 </body>
 </html>
