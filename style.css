@@ -75,6 +75,20 @@ p {
 .stat span i {
     font-size: 18px;
 }
+.success {
+    padding: 7px;
+    border-radius: 5px;
+    background-color: rgba(172, 255, 47, 0.219);
+    color: darkgreen;
+    font-weight: bold;
+    border: 1px solid rgba(0, 128, 0, 0.26);
+    font-size: 0.9rem;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #more {
     cursor: pointer;
 }
