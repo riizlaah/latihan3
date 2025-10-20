@@ -116,8 +116,14 @@ p {
     margin-top: 0;
     margin-bottom: 2rem;
 }
+.radius {
+  border-radius: 12px;
+  overflow: hidden;
+  border-bottom: none;
+}
 .blue-bottom {
-    border-bottom: 4px solid rgb(44, 83, 255);
+  height: 4px;
+  background-color: dodgerblue;
 }
 img.icon {
     width: 64px;
