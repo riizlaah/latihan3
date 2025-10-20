@@ -86,8 +86,41 @@ p {
 }
 .center {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+}
+.w-100 {
+    width: 100%;
+}
+.rows {
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+}
+.border-dash {
+    border: 1px dashed lightgray;
+    padding: 10px;
+    border-radius: 8px;
+}
+.border-dash p {
+    margin: 0;
+}
+.border-dash p:first-child {
+    font-weight: bold;
+}
+.border-dash p:last-child {
+    font-size: 0.9rem;
+}
+.subtitle {
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+.blue-bottom {
+    border-bottom: 4px solid rgb(44, 83, 255);
+}
+img.icon {
+    width: 64px;
+    cursor: pointer;
 }
 #more {
     cursor: pointer;

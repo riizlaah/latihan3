@@ -8,30 +8,44 @@
     <title>Latihan 3 pt. 2</title>
 </head>
 <body>
-    <div class="card shadow-bottom" style="width: 420px;">
-        <div class="content">
-            <div class="icons">
+    <!-- tolong dicek lagi -->
+    <div class="card blue-bottom border" style="width: 420px;">
+        <div class="content center">
+            <div class="icons w-100">
                 <span class="success">Completed</span>
                 <i class="hgi hgi-stroke hgi-more-vertical" id="more"></i>
             </div>
-            <img src="" alt="Twitch">
+            <img class="icon" src="https://cdn-icons-png.flaticon.com/512/5968/5968819.png" alt="Twitch">
             <span class="card-title">Urban Dreams</span>
-            <p>Live Gaming Spectacle Unveiled</p>
-            <div class="flex">
-                <div class="border-trail">
+            <p class="subtitle">Live Gaming Spectacle Unveiled</p>
+            <div class="rows w-100">
+                <div class="border-dash">
                     <p>50.7%</p>
                     <p>Traffic Up</p>
                 </div>
-                <div class="border-trail">
+                <div class="border-dash">
                     <p>20.1k</p>
                     <p>New Fans</p>
                 </div>
-                <div class="border-trail">
+                <div class="border-dash">
                     <p>$100k</p>
                     <p>Donated</p>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        let center = false;
+        document.getElementById('more').onclick = () => {
+            center = !center;
+            if(center) {
+                document.body.style.display = 'flex';
+                document.body.style.justifyContent = 'center';
+                document.body.style.alignItems = 'center';
+            } else {
+                document.body.style.display = 'block';
+            }
+        };
+    </script>
 </body>
 </html>
