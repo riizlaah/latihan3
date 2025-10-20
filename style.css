@@ -1,31 +1,80 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+}
 body {
     height: 96.5vh;
-}
-.card {
-    width: 360px;
-    border: 2px solid whitesmoke;
-    border-radius: 8px;
-    padding: 32px;
-    font-family: Arial, sans-serif;
-    margin: auto;
-}
-.card div {
-    display: flex;
-    justify-content: space-between;
-}
-.card .icons i {
-    font-size: 24px;
-}
-#more {
-    cursor: pointer;
-}
-.card-title {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-top: 18px;
-    display: block;
 }
 p {
     margin-top: 10px;
     line-height: 1.5;
+}
+.card {
+    width: 360px;
+    border-radius: 8px;
+    margin: auto;
+}
+.border {
+    border: 1px solid #dfdfdf;
+}
+.card .content {
+    padding: 16px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.card img {
+    display: block;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.card .icons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+.card .icons i {
+    font-size: 2rem;
+}
+.card-title {
+    margin-top: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: block;
+}
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+.user {
+    display: flex;
+}
+.user img {
+    width: 28px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.user span {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+.stat span {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-size: 0.9rem;
+}
+.stat span i {
+    font-size: 18px;
+}
+#more {
+    cursor: pointer;
 }
