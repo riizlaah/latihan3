@@ -77,12 +77,12 @@ p {
     font-size: 18px;
 }
 .success {
-    padding: 7px;
+    padding: 5px;
     border-radius: 5px;
-    background-color: rgba(172, 255, 47, 0.219);
-    color: darkgreen;
+    background-color: #eefff7;
+    color: #2b806b;
     font-weight: bold;
-    border: 1px solid rgba(0, 128, 0, 0.26);
+    border: 1px solid #ceeadb;
     font-size: 0.75rem;
 }
 .center {
@@ -96,7 +96,7 @@ p {
 .rows {
     justify-content: center;
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 .border-dash {
     border: 1px dashed lightgray;
@@ -123,11 +123,12 @@ p {
 }
 .blue-bottom {
   height: 4px;
-  background-color: dodgerblue;
+  background-color: #327feb;
 }
 img.icon {
     width: 64px;
     cursor: pointer;
+    margin-bottom: 16px;
 }
 #more {
     cursor: pointer;
