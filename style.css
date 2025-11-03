@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root {
@@ -11,6 +10,21 @@ body {
 p {
     margin-top: 10px;
     line-height: 1.5;
+}
+nav.closeable {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 16px 0;
+}
+nav.closeable a {
+    text-decoration: none;
+    color: dodgerblue;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+nav.closeable a:hover {
+    font-size: 1.25rem;
 }
 .card {
     width: 360px;
